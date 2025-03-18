@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="icon"
+      href="./Public/1_fMCdGCokXoh8CECCD7j9Og.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/event.css" />
+    <link rel="stylesheet" href="output.css" />
+
+    <!---->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barrio&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-black cursor-none">
+    <div class="cursor1"></div>
+
+    <div
+      class="page1 h-screen w-full flex flex-col justify-center items-center overflow-hidden"
+    >
+      <nav
+        class="navBar fixed z-50 top-0 right-0 left-0 w-full h-[100px] backdrop-blur-md flex justify-between items-center p-[2vw]"
+      >
+        <div class="text-white max-sm:hidden">
+          <a href="index.html">
+            <img src="./Public/white-MLSA.png" class="w-[20vw]" alt=""
+          /></a>
+        </div>
+        <div
+          class="container flex justify-center items-center gap-[4vw] max-sm:hidden"
+        >
+          <ul class="tabs" id="tabs">
+            <li class="tab magnet-target"><a href="index.html">Home</a></li>
+
+            <li class="tab magnet-target"><a href="event.html">Events</a></li>
+
+            <li class="tab magnet-target">
+              <a href="projects.html">Projects</a>
+            </li>
+            <li class="tab magnet-target">
+              <a href="https://mlsabitjaipur.substack.com/">Blog</a>
+            </li>
+            <li class="tab magnet-target">
+              <a href="gallery.html">Gallery</a>
+            </li>
+            <li class="tab magnet-target"><a href="member.html">Members</a></li>
+            <li class="tab magnet-target">
+              <a href="partners.html">Partners</a>
+            </li>
+
+            <div class="cursor" id="cursor"></div>
+          </ul>
+        </div>
+
+        <button
+          class="bg-black py-5 px-7 rounded-lg hover:bg-white hover:text-black font-bold transition-all duration-300"
+          onclick="showOverlay()"
+        >
+          SOCIALS
+        </button>
+        <i
+          onclick="handlesidebarButton()"
+          class="ri-menu-line sm:hidden text-[8vw] m-[3vw]"
+        ></i>
+      </nav>
+      <div
+        class="navSideBar fixed z-50 right-0 bottom-0 top-0 w-[70%] bg-secondray bg-opacity-90 text-white text-[5vw]"
+      >
+        <i
+          onclick="handleCloseButtonclick()"
+          class="closebutton ri-close-large-line py-[6vw] px-[6vw] w-full flex justify-start"
+        ></i>
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="index.html"
+          ><div>Home</div></a
+        >
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="event.html"
+          class="navLink"
+          ><div>Events</div></a
+        >
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="https://mlsabitjaipur.substack.com/"
+        >
+          <div>Blog</div>
+        </a>
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="gallery.html"
+          ><div>Gallery</div></a
+        >
+
+        <a
+          class="border-t py-[6vw] w-full flex justify-center"
+          href="projects.html"
+        >
+          <div>Projects</div>
+        </a>
+        <a
+          class="border-y py-[6vw] w-full flex justify-center"
+          href="member.html"
+        >
+          <div>Members</div>
+        </a>
+        <a
+          class="border-y py-[6vw] w-full flex justify-center"
+          href="partners.html"
+        >
+          <div>Partners</div>
+        </a>
+      </div>
+      <div class="content flex justify-center items-center flex-col relative">
+        <div class="Barrio page1upcoming text-[4vw]">OUR</div>
+        <div
+          class="text-white font-bold text-[28vw] absolute mix-blend-difference page1events"
+        >
+          EVENTS
+        </div>
+      </div>
+
+      <div class="area">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page2 p-[2vw]">
+      <div class="flex items-center max-sm:flex-col">
+        <img
+          src="./Public/events/e3049bab-0918-4c59-bbfb-30315eb22f33.jpg"
+          alt=""
+          class="w-[50%] max-sm:w-[90%] rounded-sm diventery"
+        />
+        <div class="sm:pl-[8vw] max-sm:flex max-sm:flex-col">
+          <h1
+            class="text-[3vw] Barrio diventery magnet-target max-sm:text-[7vw]"
+          >
+            Orientation Session MLSA
+          </h1>
+          <h1 class="text-[2vw] diventery max-sm:text-[5vw]">
+            27th January 2025
+          </h1>
+          <h1 class="text-[1.2vw] diventery max-sm:text-[4vw]">
+            100+ Attendees
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class="text-marquee">
+      <div class="text-single">
+        <span class="text js-text">More Events</span>
+        <span class="text js-text">Coming Soon</span>
+        <span class="text js-text">More Events</span>
+        <span class="text js-text">Coming Soon</span>
+        <span class="text js-text">More Events</span>
+      </div>
+    </div>
+    <div
+      class="page3 p-4 sm:p-[4vw] overflow-hidden border-t-2 border-white sm:m-[1vw]"
+    >
+      <div class="flex flex-col sm:flex-row justify-between gap-8 sm:gap-0">
+        <div class="w-full sm:w-[25vw] text-white text-center sm:text-left">
+          <div class="text-sm sm:text-base sm:text-left">
+            A community trying to bridge the gap between academia and industry.
+          </div>
+          <div
+            class="mt-4 text-xl sm:text-2xl gap-4 flex justify-center sm:justify-start"
+          >
+            <a href="https://github.com/mlsa-bitjaipur">
+              <i class="ri-github-fill hover:text-gray-300 cursor-pointer"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/mlsa_bitjaipur?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            >
+              <i
+                class="ri-instagram-line hover:text-gray-300 cursor-pointer"
+              ></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/mlsa-bit-jaipur-chapter/posts/?feedView=all"
+            >
+              <i
+                class="ri-linkedin-box-fill hover:text-gray-300 cursor-pointer"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row justify-center items-center gap-8 sm:gap-[2vw] text-white"
+        >
+          <div class="w-full sm:w-[25vw] text-center sm:text-left">
+            <div class="font-bold mb-2 text-sm sm:text-base">CONTACT US</div>
+            <div class="mb-1 text-xs sm:text-sm">
+              <i class="ri-phone-fill"></i> +91 6377907623
+            </div>
+            <div class="mb-1 text-xs sm:text-sm">
+              <i class="ri-phone-fill"></i> +91 7417403294
+            </div>
+            <div class="mb-1 text-xs sm:text-sm">
+              <i class="ri-phone-fill"></i> +91 8619056754
+            </div>
+            <div class="text-xs sm:text-sm">contact@mlsabitjaipur.com</div>
+          </div>
+          <div
+            class="w-full sm:w-[10vw] text-center sm:text-left flex flex-col"
+          >
+            <div class="font-bold mb-2 text-sm sm:text-base">
+              VISIT US AT BIT
+            </div>
+            <a href="https://maps.app.goo.gl/KpyTuttknJFZ4ca46">
+              Birla Institute of Technology, Jaipur - 302017, Rajasthan, India
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex justify-center sm:justify-start mt-4 sm:mt-[3vw] text-neutral-500 text-xs sm:text-sm text-center max-sm:text-sm"
+      >
+        © 2025 MLSA BIT | DESIGNED BY MLSA BIT TEAM
+      </div>
+    </div>
+    <div class="overlay" id="socialsOverlay">
+      <div class="overlay-content"></div>
+    </div>
+
+    <script src="https://unpkg.com/lenis@1.1.19/dist/lenis.min.js"></script>
+
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/sheryjs/dist/Shery.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/event.js"></script>
+    <script
+      src="https://static.elfsight.com/platform/platform.js"
+      async
+    ></script>
+  </body>
+</html>
